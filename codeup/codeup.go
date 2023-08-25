@@ -224,6 +224,7 @@ func (s CodeUp) readDirectory() error {
 			OrganizationId: tea.String(s.option.Config.OrganizationId),
 			AccessToken:    tea.String(s.option.Config.AccessToken),
 			Path:           tea.String(s.option.Config.Path),
+			RefName:        tea.String(s.option.Config.Ref),
 		},
 		s.option.Headers,
 		s.option.Runtime,
